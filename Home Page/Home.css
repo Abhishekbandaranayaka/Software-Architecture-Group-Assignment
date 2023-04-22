@@ -1,0 +1,64 @@
+            
+    .cards{
+        width: 30%;
+        height: 200%;
+        background-color: rgb(219, 203, 186);
+        border-radius: 5px;
+        margin: 40px;
+        float:right;
+    }
+    .cards:hover{
+        box-shadow: 2px 2px 10px black;
+    }
+    
+    
+    .para{
+        text-align: center;
+        padding: 4px;
+        font-size: 35px;
+    }
+    
+    .des{
+        text-align:center;
+        padding: 4px;
+        font-size: 25px;
+        font-family: Arial;
+        font-style: italic;
+    }
+    
+    .card{
+        width: 96%;
+        height: 250px;
+        background-color: rgb(219, 203, 186);
+        border-radius: 5px;
+        margin: 40px;
+        background-size: cover;
+        background-position: center center;
+    }
+    .card:hover{
+        box-shadow: 2px 2px 10px black;
+    }
+    
+    
+    .text{
+        text-align:left;
+        padding: 20px;
+        font-size: 22px;
+        font-style: normal;
+    }
+    button{
+        background-color:#3d3d3d;
+        padding:10px 30px;
+        text-decoration:none;
+        border-radius: 40px;
+        color:#fff;
+        font-size:22px;
+        letter-spacing:1.5px;
+        margin-top:15px;
+        float: right;
+    }
+    button:hover{
+        background-color:#a52a2a;
+        color:#fff;
+    }
+    
