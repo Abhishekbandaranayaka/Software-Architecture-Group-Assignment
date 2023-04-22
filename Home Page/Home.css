@@ -2,7 +2,7 @@
     .cards{
         width: 30%;
         height: 200%;
-        background-color: rgb(219, 203, 186);
+        background-color: rgb(252, 249, 246);
         border-radius: 5px;
         margin: 40px;
         float:right;
@@ -29,7 +29,7 @@
     .card{
         width: 96%;
         height: 250px;
-        background-color: rgb(219, 203, 186);
+        background-color: rgb(231, 225, 219);
         border-radius: 5px;
         margin: 40px;
         background-size: cover;
@@ -45,6 +45,8 @@
         padding: 20px;
         font-size: 22px;
         font-style: normal;
+        color: #401f1f;
+        font-family: Arial;
     }
     button{
         background-color:#3d3d3d;
