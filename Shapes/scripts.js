@@ -115,7 +115,7 @@ $(document).ready(function () {
     ctx.arc(canvas.width / 2, canvas.height / 2, radius, 0, 2 * Math.PI);
     ctx.stroke();
   }
-}
+
   // Draw triangle
   function drawTriangle(base, height) {
     resetCanvas();
