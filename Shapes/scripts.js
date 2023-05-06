@@ -116,4 +116,120 @@ $(document).ready(function () {
     ctx.stroke();
   }
 }
+  // Draw triangle
+  function drawTriangle(base, height) {
+    resetCanvas();
+    let canvas = document.querySelector(".diagram");
+    let ctx = canvas.getContext("2d");
 
+    // Calculate the maximum dimension of the triangle
+    let maxDimension = Math.max(base, height);
+
+    // Check if the maximum dimension is greater than the canvas width or height
+    if (maxDimension > canvas.width || maxDimension > canvas.height) {
+      // Scale down the canvas size to fit the triangle
+      let canvasSize = Math.max(maxDimension, canvas.width, canvas.height) + 50;
+      if (canvasSize < 500) {
+        canvasSize = 500;
+      }
+      canvas.width = canvasSize;
+      canvas.height = canvasSize;
+
+      // Resize the modal container
+      let modal = document.querySelector("#result-modal .modal-dialog");
+      modal.style.maxWidth = `${canvasSize}px`;
+      modal.style.width = `${canvasSize}px`;
+    }
+
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Calculate the coordinates of the triangle's points
+    let x1 = canvas.width / 2 - base / 2;
+    let y1 = canvas.height / 2 + height / 2;
+    let x2 = canvas.width / 2;
+    let y2 = canvas.height / 2 - height / 2;
+    let x3 = canvas.width / 2 + base / 2;
+    let y3 = canvas.height / 2 + height / 2;
+
+    // Draw the triangle
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.lineTo(x3, y3);
+    ctx.closePath();
+    ctx.stroke();
+  }
+
+  // Draw rectangle
+  function drawRectangle(length, width) {
+    resetCanvas();
+    let canvas = document.querySelector(".diagram");
+    let ctx = canvas.getContext("2d");
+
+    // Find the maximum value of length and width
+    let maxDimension = Math.max(length, width);
+
+    // Check if the maximum dimension is greater than the canvas width or height
+    if (maxDimension > canvas.width || maxDimension > canvas.height) {
+      // Scale up the canvas size to fit the rectangle
+      let canvasSize = Math.max(maxDimension, canvas.width, canvas.height) + 50;
+      if (canvasSize < 500) {
+        canvasSize = 500;
+      }
+      canvas.width = canvasSize;
+      canvas.height = canvasSize;
+
+      // Resize the modal container
+      let modal = document.querySelector("#result-modal .modal-dialog");
+      modal.style.maxWidth = `${canvasSize}px`;
+      modal.style.width = `${canvasSize}px`;
+    }
+
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Calculate the coordinates of the rectangle's points
+    let x1 = canvas.width / 2 - length / 2;
+    let y1 = canvas.height / 2 - width / 2;
+    let x2 = canvas.width / 2 + length / 2;
+    let y2 = canvas.height / 2 - width / 2;
+    let x3 = canvas.width / 2 + length / 2;
+    let y3 = canvas.height / 2 + width / 2;
+    let x4 = canvas.width / 2 - length / 2;
+    let y4 = canvas.height / 2 + width / 2;
+
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.lineTo(x3, y3);
+    ctx.lineTo(x4, y4);
+    ctx.closePath();
+    ctx.stroke();
+  }
+
+  // Back button handle
+  $(".backtotype").click(function () {
+    resetPopups();
+    $("#calc-type").modal("show");
+  });
+
+  // Reset popups
+  function resetPopups() {
+    $("#calc-type").modal("hide");
+    $("#result-modal").modal("hide");
+    $("#circle-modal").modal("hide");
+    $("#triangle-modal").modal("hide");
+    $("#rectangle-modal").modal("hide");
+  }
+});
+
+// Reset canvas
+function resetCanvas() {
+  let canvas = document.querySelector(".diagram");
+  let modal = document.querySelector("#result-modal .modal-dialog");
+
+  // Reset canvas size
+  canvas.width = 0;
+  canvas.height = 0;
+}
