@@ -1,0 +1,41 @@
+.footer-bs {
+  background-color: rgba(95, 71, 24, 0.48);
+  color: #3A2000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+   
+}
+  
+ 
+  
+  
+.letter
+{
+  
+font-family: Caladea;
+  color: #3A2000;
+  height: 10px solid;
+}
+.a
+{
+color: #3A2000;
+}
+.container1{
+  background-color:#3A2000;
+  height: 15px;
+}
+.container2{
+  background-color:#3A2000;
+  height: 0.1px;
+  
+ 
+
+}
+
+.imgs
+{
+ padding-left: 85%;
+}
