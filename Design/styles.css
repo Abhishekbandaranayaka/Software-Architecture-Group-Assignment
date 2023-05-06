@@ -16,24 +16,7 @@ body{
 }
 
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #aea189;
-    border-bottom:  1px solid black;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
-.header-title h1{
-    flex: 1;
-    font-size: 30px;
-    color:#3a2207;
-}
-.header__links a{
-    margin-left: 20px;
-    color:#3a2207
-}
+
 .app-body{
     padding: 30px;
 }
