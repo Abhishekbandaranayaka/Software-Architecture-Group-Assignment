@@ -1,0 +1,97 @@
+/* nav bar background clour edit */
+.bg{
+	background-color: rgba(95, 71, 24, 0.48);
+
+    
+  }
+  .navbar-brand{
+	margin: 0;
+  }
+	/* point viwe edit */
+  #navbarSupportedContent li a:hover{
+	padding: 20px 15px;
+	  background: white;
+	  transition: 0.5s;
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  border-radius: 15px;
+	  border: white;
+	  border-radius: 9px;
+    color: #3A2000;
+
+	
+  }
+ 
+  
+.logotext{
+    font-size: 50px;;
+    font-family: Caladea;;
+    font-weight: Regular;
+    color: #3A2000;
+
+}
+
+  .nav-item{
+	font-size: 18px;;
+    color: #3A2000;
+    padding-right: 35px;
+   
+    
+  }
+ 
+  ul li a
+  {
+     text-decoration:none;
+     font-size:16px;
+     display:block;
+     text-align:center;
+     padding:10px;
+     border-radius:20px;
+     color:#3A2000;
+   
+
+  }
+
+  ul :hover li{
+    color: #3A2000;
+  }
+
+
+  ul li ul :hover li
+  {
+     
+    display:block;
+    color: #3A2000;
+  }
+
+
+  ul li ul li :hover a
+  {
+     
+    color: #3A2000;
+  }
+
+  ul li:hover ul
+  {
+    display:block;
+    opacity: 1;
+    visibility:visible;
+  }
+
+  ul ul ul li
+  {
+    display:none;
+
+  }
+
+
+  ul ul ul
+  {
+    left:100%
+  }
+
+
+.navbuttons{
+  padding-right: 50px;
+}
+ 
