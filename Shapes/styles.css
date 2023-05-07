@@ -38,12 +38,13 @@ body{
     padding: 30px;
 }
 .app-body h2{
-    font-size: 15px;
+    font-size: 18px;
     color:#3a2207;
     margin-bottom: 10px;
+
 }
 .app-body p{
-    font-size: 12px;
+    font-size: 15px;
    
 }
 .boxes{
