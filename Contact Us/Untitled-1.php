@@ -9,6 +9,11 @@
 
   </head>
   <body>
+  <?php include('../navbar.php')?>
+<br>
+<br>
+<br>
+
     <br>
     <header>
       <h1>Contact Us</h1>
@@ -60,5 +65,6 @@
     </main>
    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <?php include('../footerHTML.php')?>
   </body>
 </html>

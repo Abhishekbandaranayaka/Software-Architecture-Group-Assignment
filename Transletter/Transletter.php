@@ -30,6 +30,11 @@
  </style>
 </head>
 <body>
+<?php include('../navbar.php')?>
+<br>
+<br>
+<br>
+<br>
  <div class="container">
   <h1>Text</h1>
   <form>
@@ -73,6 +78,6 @@
    document.getElementById("braille-output").value = outputText;
   }
  </script>
-
+<?php include('../footerHTML.php')?>
 </body>
 </html>

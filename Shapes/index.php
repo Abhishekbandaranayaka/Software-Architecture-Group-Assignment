@@ -14,6 +14,11 @@
 </head>
 
 <body>
+<?php include('../navbar.php')?>
+<br>
+<br>
+<br>
+<br>
   <!----------------------------------------------------Start App Body----------------------------------------------------------------->
 
   <div class="app-body">
@@ -202,7 +207,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
-
+  <?php include('../footerHTML.php')?>
 </body>
 
 </html>
