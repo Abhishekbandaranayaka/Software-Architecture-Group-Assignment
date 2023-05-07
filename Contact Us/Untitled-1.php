@@ -9,6 +9,11 @@
 
   </head>
   <body>
+  <?php include('../navbar.php')?>
+<br>
+<br>
+<br>
+
     <br>
     <header>
       <h1>Contact Us</h1>

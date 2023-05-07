@@ -30,6 +30,11 @@
  </style>
 </head>
 <body>
+<?php include('../navbar.php')?>
+<br>
+<br>
+<br>
+<br>
  <div class="container">
   <h1>Text</h1>
   <form>

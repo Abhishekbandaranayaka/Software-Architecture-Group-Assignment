@@ -7,11 +7,18 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Satisfy&display=swap');
       </style>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="Home.css">
    
     </style>
+    
   </head>
   <body>
+    <?php include('../navbar.php')?>
+<br>
+<br>
+<br>
+<br>
+<center>
     <section id="top">
         <img class="img_deg" src="img/circle.png" />
 
@@ -26,11 +33,12 @@
           </div>
         </div>
     </section>
+    </center>
 
 
     <div class="card">
       <div class="text">
-        <button type="button" id="read" onclick="read()">SHAPES</button>
+        <button type="button" id="read" onclick="read()">SHAPE</button>
         <h12><br />CREATE YOUR OWN SHAPE USING BRAILLE</h12>
         <br />
         <h12>Input requirements & get the shape in braille </h12>
@@ -44,5 +52,7 @@
         <h12>Type a word or sentences to see it written in braille </h12>
       </div>
     </div>
+
+   
   </body>
 </html>
