@@ -18,7 +18,7 @@
 <br>
 <br>
 <br>
-<center>
+
     <section id="top">
         <img class="img_deg" src="img/circle.png" />
 
@@ -33,12 +33,14 @@
           </div>
         </div>
     </section>
-    </center>
+    
 
 
     <div class="card">
       <div class="text">
-        <button type="button" id="read" onclick="read()">SHAPE</button>
+        <a href="../Shapes/index.php">
+        <button type="button" id="read" onclick="read('')" >SHAPE</button>
+        </a>
         <h12><br />CREATE YOUR OWN SHAPE USING BRAILLE</h12>
         <br />
         <h12>Input requirements & get the shape in braille </h12>
@@ -46,7 +48,9 @@
 
       <hr />
       <div class="text">
-        <button type="button" id="read" onclick="read()">TEXT</button>
+      <a href="../Transletter/Transletter.php">
+        <button type="button" id="read" onclick="read('')">TEXT</button>
+        </a>
         <h12>CREATE YOUR OWN BRAILLE SENTENCE</h12>
         <br />
         <h12>Type a word or sentences to see it written in braille </h12>
