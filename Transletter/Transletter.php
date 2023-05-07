@@ -78,6 +78,6 @@
    document.getElementById("braille-output").value = outputText;
   }
  </script>
-
+<?php include('../footerHTML.php')?>
 </body>
 </html>

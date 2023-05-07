@@ -53,6 +53,6 @@
       </div>
     </div>
 
-   
+    <?php include('../footerHTML.php')?>
   </body>
 </html>

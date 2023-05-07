@@ -65,5 +65,6 @@
     </main>
    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <?php include('../footerHTML.php')?>
   </body>
 </html>
